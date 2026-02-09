@@ -1,0 +1,63 @@
+<svg width="48" height="48" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer circle gradient background -->
+  <defs>
+    <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5B8DEE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F472B6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Globe circle -->
+  <circle cx="180" cy="200" r="110" fill="url(#globeGradient)" opacity="0.9"/>
+  
+  <!-- Globe grid lines -->
+  <circle cx="180" cy="200" r="110" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="8"/>
+  
+  <!-- Horizontal lines -->
+  <line x1="70" y1="200" x2="290" y2="200" stroke="rgba(255,255,255,0.25)" stroke-width="6"/>
+  <line x1="75" y1="155" x2="285" y2="155" stroke="rgba(255,255,255,0.2)" stroke-width="5"/>
+  <line x1="75" y1="245" x2="285" y2="245" stroke="rgba(255,255,255,0.2)" stroke-width="5"/>
+  
+  <!-- Vertical curved lines -->
+  <path d="M 180 90 Q 190 200 180 310" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="6"/>
+  <path d="M 130 110 Q 140 200 130 290" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="5"/>
+  <path d="M 230 110 Q 240 200 230 290" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="5"/>
+  
+  <!-- Arc circle on left side -->
+  <path d="M 160 120 A 90 90 0 0 0 140 310" fill="none" stroke="url(#arcGradient)" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Airplane on top right -->
+  <g transform="translate(260, 100)">
+    <!-- Airplane body -->
+    <rect x="-15" y="-5" width="30" height="10" fill="#2563EB" rx="5"/>
+    <!-- Airplane wings -->
+    <rect x="-35" y="-2" width="70" height="4" fill="#2563EB" rx="2"/>
+    <!-- Airplane tail -->
+    <polygon points="18,0 25,-8 25,8" fill="#2563EB"/>
+  </g>
+  
+  <!-- Decorative plus signs -->
+  <g stroke="rgba(236, 72, 153, 0.5)" stroke-width="3" stroke-linecap="round">
+    <line x1="80" y1="60" x2="100" y2="60"/>
+    <line x1="90" y1="50" x2="90" y2="70"/>
+    
+    <line x1="330" y1="200" x2="350" y2="200"/>
+    <line x1="340" y1="190" x2="340" y2="210"/>
+    
+    <line x1="100" y1="320" x2="120" y2="320"/>
+    <line x1="110" y1="310" x2="110" y2="330"/>
+  </g>
+  
+  <!-- Decorative plus signs (light gray) -->
+  <g stroke="rgba(150, 150, 150, 0.3)" stroke-width="2" stroke-linecap="round">
+    <line x1="50" y1="100" x2="65" y2="100"/>
+    <line x1="57.5" y1="92.5" x2="57.5" y2="107.5"/>
+    
+    <line x1="320" y1="320" x2="335" y2="320"/>
+    <line x1="327.5" y1="312.5" x2="327.5" y2="327.5"/>
+  </g>
+</svg>
