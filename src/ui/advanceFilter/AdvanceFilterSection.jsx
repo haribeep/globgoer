@@ -120,7 +120,7 @@ const AdvanceFilterSection = ({ onApplyFilters }) => {
               Stops
             </Typography>
             <Typography
-              sx={{ fontWeight: 600, fontSize: "12px", color: "#94A3B8" }}
+              sx={{ fontWeight: 600, fontSize: "14px", color: "#333" }}
             >
               From
             </Typography>
@@ -177,7 +177,7 @@ const AdvanceFilterSection = ({ onApplyFilters }) => {
               Airlines
             </Typography>
             <Typography
-              sx={{ fontWeight: 600, fontSize: "12px", color: "#94A3B8" }}
+              sx={{ fontWeight: 600, fontSize: "14px", color: "#333" }}
             >
               From
             </Typography>
@@ -234,7 +234,7 @@ const AdvanceFilterSection = ({ onApplyFilters }) => {
               Travel and Baggage
             </Typography>
             <Typography
-              sx={{ fontWeight: 600, fontSize: "12px", color: "#94A3B8" }}
+              sx={{ fontWeight: 600, fontSize: "14px", color: "#333" }}
             >
               From
             </Typography>
@@ -333,6 +333,8 @@ const AdvanceFilterSection = ({ onApplyFilters }) => {
               justifyContent: "space-between",
               alignItems: "center",
               mb: 2,
+
+              
             }}
           >
             <Typography
@@ -378,6 +380,26 @@ const AdvanceFilterSection = ({ onApplyFilters }) => {
       </Box>
 
       <Box sx={{ display: "flex", gap: 2, mt: 3 }}>
+         <Button
+          variant="outlined"
+          onClick={resetFilters}
+          sx={{
+            flex: 1,
+            borderColor: "#d0d7de",
+            color: "#666",
+            textTransform: "none",
+            fontWeight: 600,
+            borderRadius: "8px",
+            py: 1.2,
+            "&:hover": {
+              borderColor: "#482A89",
+              color: "#482A89",
+              bgcolor: "#f0f5ff",
+            },
+          }}
+        >
+          Reset
+        </Button>
         <Button
           variant="contained"
           onClick={applyFilters}
@@ -413,26 +435,7 @@ const AdvanceFilterSection = ({ onApplyFilters }) => {
         >
           Apply Filter
         </Button>
-        <Button
-          variant="outlined"
-          onClick={resetFilters}
-          sx={{
-            flex: 1,
-            borderColor: "#d0d7de",
-            color: "#666",
-            textTransform: "none",
-            fontWeight: 600,
-            borderRadius: "8px",
-            py: 1.2,
-            "&:hover": {
-              borderColor: "#482A89",
-              color: "#482A89",
-              bgcolor: "#f0f5ff",
-            },
-          }}
-        >
-          Reset
-        </Button>
+       
       </Box>
     </Card>
   );

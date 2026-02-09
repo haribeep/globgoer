@@ -7,7 +7,7 @@ import ActionCards from "@/ui/actionCards/ActionCards";
 import AdvanceFilterSection from "@/ui/advanceFilter/AdvanceFilterSection";
 import FlightListing from "@/ui/flightListing/FlightListing";
 import { MASTER_FLIGHT_DATA } from "@/data/flight";
-
+import Footer from "@/components/Footer";
 
 const FlightBooking = () => {
 
@@ -184,6 +184,7 @@ const finalFilteredFlights = useMemo(() => {
           </Box>
         </Box>
       </Container>
+      <Footer />
     </Box>
   );
 };
